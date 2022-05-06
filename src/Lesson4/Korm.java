@@ -14,7 +14,7 @@ public class Korm {
     }
 
     public static int kormMonth(int a, int b) {
-        return (a * b) * 30;
+        return ((a * b) * 3) * 30;
     }
     public static int moneyMonth(int a, int b, int c) {
         return (a + b) * c;
