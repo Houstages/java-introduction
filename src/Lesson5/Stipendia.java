@@ -5,7 +5,7 @@ public class Stipendia {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int mat, ukr, his, inf, bio;
-        float sBal;
+        float GPA;
 
         System.out.print("Введіть оцінку за математику: ");
         mat = in.nextInt();
@@ -18,16 +18,16 @@ public class Stipendia {
         System.out.print("Введіть оцінку за біологію: ");
         bio = in.nextInt();
 
-        sBal = (mat + ukr + his + inf + bio) / 5.0f;
+        GPA = (mat + ukr + his + inf + bio) / 5.0f;
 
-        if (sBal >= 10.0){
-            System.out.println("Середній бал: " + sBal + " - підвищена стипендія");
+        if (GPA >= 10.0){
+            System.out.println("Середній бал: " + GPA + " - підвищена стипендія");
         }
-        else if (sBal >= 8.0){
-            System.out.println("Середній бал: " + sBal + " - звичайна стипендія");
+        else if (GPA >= 8.0){
+            System.out.println("Середній бал: " + GPA + " - звичайна стипендія");
         }
         else{
-            System.out.println("Середній бал: " + sBal + " - немає стипендії");
+            System.out.println("Середній бал: " + GPA + " - немає стипендії");
         }
     }
 }
