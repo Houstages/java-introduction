@@ -1,9 +1,10 @@
 package Lesson5;
 import java.util.Scanner;
 
-public class Klad {
+public class Hand_Luggage {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
         int len, wid, hei;
         System.out.println("Введіть довжину: ");
         len = in.nextInt();
@@ -20,5 +21,3 @@ public class Klad {
         }
     }
 }
-
-

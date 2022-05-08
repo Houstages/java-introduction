@@ -1,9 +1,10 @@
 package Lesson5;
 import java.util.Scanner;
 
-public class Stipendia {
+public class Scholarship {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
         int mat, ukr, his, inf, bio;
         float GPA;
 
