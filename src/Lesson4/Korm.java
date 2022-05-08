@@ -16,7 +16,7 @@ public class Korm {
     public static int kormMonth(int pet, int portion) {
         return ((pet * portion) * 3) * 30;
     }
-    public static int moneyMonth(int a, int b, int c) {
-        return (a + b) * c;
+    public static int moneyMonth(int kormCats, int kormDogs, int pricePerServing) {
+        return (kormCats + kormDogs) * pricePerServing;
     }
 }
