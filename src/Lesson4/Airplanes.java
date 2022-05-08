@@ -13,22 +13,19 @@ public class Airplanes {
         int Eco2 = 180;
         int Bus1 = 28;
 
-        String printAirplaneInfo1 = printAirplaneInfo(model1, type1);
-        String printAirplaneInfo2 = printAirplaneInfo(model2, type2, Eco1);
-        String printAirplaneInfo3 = printAirplaneInfo(model3, type2, Eco2, Bus1);
+        printAirplaneInfo(model1, type1);
+        printAirplaneInfo(model2, type2, Eco1);
+        printAirplaneInfo(model3, type2, Eco2, Bus1);
 
-        System.out.println(printAirplaneInfo1);
-        System.out.println(printAirplaneInfo2);
-        System.out.println(printAirplaneInfo3);
     }
 
-    public static String printAirplaneInfo(String a, String b) {
-        return "Модель: " + a + ", тип: " + b;
+    public static void printAirplaneInfo(String model1, String type1) {
+        System.out.println("Модель: " + model1 + ", тип: " + type1);
     }
-    public static String printAirplaneInfo(String  a, String b, int c) {
-        return "Модель: " + a + ", тип: " + b + ", кол. пасажиров эконом класса: " + c;
+    public static void printAirplaneInfo(String  model2, String type2, int Eco1) {
+        System.out.println("Модель: " + model2 + ", тип: " + type2 + ", кол. пасажиров эконом класса: " + Eco1);
     }
-    public static String printAirplaneInfo(String a, String b, int c, int d) {
-        return "Модель: " + a + ", тип: " + b + ", кол. пасажиров эконом класса: " + c + ", пассажиров бизнеc скласса: " + d;
+    public static void printAirplaneInfo(String model3, String type3, int Eco2, int Bus1) {
+        System.out.println("Модель: " + model3 + ", тип: " + type3 + ", кол. пасажиров эконом класса: " + Eco2 + ", пассажиров бизнеc скласса: " + Bus1);
     }
 }
