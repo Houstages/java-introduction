@@ -5,18 +5,18 @@ public class Klad {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int len, wid, hei;
-        System.out.println("Введіть довжину: ");
+        System.out.println("Р’РІРµРґС–С‚СЊ РґРѕРІР¶РёРЅСѓ: ");
         len = in.nextInt();
-        System.out.println("Введіть ширину: ");
+        System.out.println("Р’РІРµРґС–С‚СЊ С€РёСЂРёРЅСѓ: ");
         wid = in.nextInt();
-        System.out.println("Введіть висоту: ");
+        System.out.println("Р’РІРµРґС–С‚СЊ РІРёСЃРѕС‚Сѓ: ");
         hei = in.nextInt();
 
         if (len <= 55 && wid <= 20 && hei <= 40 || len <= 40 && wid <= 22 && hei <= 53) {
-            System.out.println("Допустимі габарити");
+            System.out.println("Р”РѕРїСѓСЃС‚РёРјС– РіР°Р±Р°СЂРёС‚Рё");
         }
         else {
-            System.out.println("Недопустимі габарити");
+            System.out.println("РќРµРґРѕРїСѓСЃС‚РёРјС– РіР°Р±Р°СЂРёС‚Рё");
         }
     }
 }

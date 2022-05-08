@@ -7,27 +7,27 @@ public class Stipendia {
         int mat, ukr, his, inf, bio;
         float sBal;
 
-        System.out.print("Введіть оцінку за математику: ");
+        System.out.print("Р’РІРµРґС–С‚СЊ РѕС†С–РЅРєСѓ Р·Р° РјР°С‚РµРјР°С‚РёРєСѓ: ");
         mat = in.nextInt();
-        System.out.print("Введіть оцінку за укр.мову: ");
+        System.out.print("Р’РІРµРґС–С‚СЊ РѕС†С–РЅРєСѓ Р·Р° СѓРєСЂ.РјРѕРІСѓ: ");
         ukr = in.nextInt();
-        System.out.print("Введіть оцінку за історію: ");
+        System.out.print("Р’РІРµРґС–С‚СЊ РѕС†С–РЅРєСѓ Р·Р° С–СЃС‚РѕСЂС–СЋ: ");
         his = in.nextInt();
-        System.out.print("Введіть оцінку за інформатику: ");
+        System.out.print("Р’РІРµРґС–С‚СЊ РѕС†С–РЅРєСѓ Р·Р° С–РЅС„РѕСЂРјР°С‚РёРєСѓ: ");
         inf = in.nextInt();
-        System.out.print("Введіть оцінку за біологію: ");
+        System.out.print("Р’РІРµРґС–С‚СЊ РѕС†С–РЅРєСѓ Р·Р° Р±С–РѕР»РѕРіС–СЋ: ");
         bio = in.nextInt();
 
         sBal = (mat + ukr + his + inf + bio) / 5.0f;
 
         if (sBal >= 10.0){
-            System.out.println("Середній бал: " + sBal + " - підвищена стипендія");
+            System.out.println("РЎРµСЂРµРґРЅС–Р№ Р±Р°Р»: " + sBal + " - РїС–РґРІРёС‰РµРЅР° СЃС‚РёРїРµРЅРґС–СЏ");
         }
         else if (sBal >= 8.0){
-            System.out.println("Середній бал: " + sBal + " - звичайна стипендія");
+            System.out.println("РЎРµСЂРµРґРЅС–Р№ Р±Р°Р»: " + sBal + " - Р·РІРёС‡Р°Р№РЅР° СЃС‚РёРїРµРЅРґС–СЏ");
         }
         else{
-            System.out.println("Середній бал: " + sBal + " - немає стипендії");
+            System.out.println("РЎРµСЂРµРґРЅС–Р№ Р±Р°Р»: " + sBal + " - РЅРµРјР°С” СЃС‚РёРїРµРЅРґС–С—");
         }
     }
 }
