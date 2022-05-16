@@ -20,8 +20,11 @@ public class Minimal {
         else if (num2 < num1 && num2 < num3) {
             System.out.println("Друге число мінімальне: " + num2);
         }
-        else {
+        else if (num3 < num1 && num3 < num2){
             System.out.println("Третє число мінімальне: " + num3);
+        }
+        else {
+            System.out.println("Однакові числа");
         }
     }
 }
