@@ -5,28 +5,28 @@ import java.util.stream.IntStream;
 public class Football {
     public static void main(String[] args) {
         int min = 18, max = 45;
-        int[] a = new int[11];
-        int[] b = new int[11];
+        int[] team1 = new int[11];
+        int[] team2 = new int[11];
 
-        for(int i = 0; i < 11; i++) a[i] = min + (int)(Math.random() * ((max - min) + 1));
-        for(int i = 0; i < 11; i++) b[i] = min + (int)(Math.random() * ((max - min) + 1));
+        for(int i = 0; i < 11; i++) team1[i] = min + (int)(Math.random() * ((max - min) + 1));
+        for(int i = 0; i < 11; i++) team2[i] = min + (int)(Math.random() * ((max - min) + 1));
 
         System.out.println("Перша команда: ");
-        printTeam(a);
+        printTeam(team1);
         System.out.println("Друга команда: ");
-        printTeam(b);
+        printTeam(team2);
 
-        double avg1 = AVG(a);
-        double avg2 = AVG(b);
+        double avg1 = AVG(team1);
+        double avg2 = AVG(team2);
 
         if(avg1 > avg2){
-            System.out.println("Середній вік 1 ком. більший: " + avg1);
+            System.out.println("Середній вік 1 команди більший: " + avg1);
         }
         else if (avg2 > avg1) {
-            System.out.println("Середній вік 2 ком. більший: " + avg2);
+            System.out.println("Середній вік 2 команди більший: " + avg2);
         }
         else{
-            System.out.println("Середнє значення рівне");
+            System.out.println("Середній вік рівний");
         }
     }
 
