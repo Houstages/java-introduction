@@ -22,6 +22,8 @@ public class Lottery {
 
         Sort(draw);
         Sort(playerNums);
+        Print(draw);
+        Print(playerNums);
 
         for(int i = 0; i < draw.length; i++) {
             if(draw[i] == playerNums[i]){
@@ -42,5 +44,13 @@ public class Lottery {
                 }
             }
         }
+    }
+
+    public static void Print(int[] arr) {
+        System.out.print("[");
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + ", ");
+        }
+        System.out.println("]");
     }
 }
