@@ -22,8 +22,8 @@ public class ArrayZeros {
             }
         }
 
-        for(int j : arr) {
-            System.out.print(j + " ");
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
         }
     }
 }
