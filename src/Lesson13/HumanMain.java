@@ -5,5 +5,7 @@ public class HumanMain {
         Human mother = new Human("Olena", "Komar");
         Human father = new Human("Andriy", "Komar");
         Human child = new Human("Tanya", "Komar", mother, father);
+
+        System.out.println(child);
     }
 }

@@ -21,4 +21,15 @@ public class Human {
         this.name = name;
         this.lastName = lastName;
     }
+
+    @Override
+    public String toString() {
+        return "Person: \n" +
+                "Name = '" + this.name + '\'' +
+                ", lastname = '" + this.lastName + '\'' +
+                ", mother name = " + mother.name  + '\'' +
+                ", mother lastname = " + mother.lastName + '\'' +
+                ", father name = ' " + father.name + '\'' +
+                ", father lastname = '" + father.lastName + '\'';
+    }
 }
